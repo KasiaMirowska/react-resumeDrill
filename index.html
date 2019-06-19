@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React Hello World</title>
+</head>
+
+<body>
+    <div id='application-root'></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+        function App(){
+            return (
+                <div className='resume'>
+                    <header>
+                    <h1>RESUME</h1>
+                    </header>
+                
+                    <section className='contact-info'>
+                    <h2>Sally Christiansen</h2> 
+                    18 Pleasant St.<br />
+                    Copenhagen <br />
+                    781 345 7624 <br />
+                    sallyC@gmail.com
+                    </section>
+
+                    <section className='education'>
+                    <h3>EDUCATION: </h3>
+                    <ul>
+                        <li>Masters in Computer Sience Degree, 
+                            New York University 2010-2012, New York, NY</li>
+                        <li>Batchelor of Sience in Web Development Degree, Salem University 2004-2008, Salem, MA</li>
+                    </ul>
+                    </section>
+
+                    <section className='experience'>
+                    <h3>PROFESSIONAL EXPERIENCE</h3>
+                    <ul>
+                        <li><h4>GROOMING TECHNOLOGIES – Fullerton, CA
+                                Web Developer</h4>
+                                <h5>Skills & Tools: PHP, PERL, Access, Oracle, .NET, CSS</h5></li>
+                                <ul>
+                                    <li>Revamped web application security applications, minimizing hacker attacks from 2.3% to 0.02%</li>
+                                    <li>Designed and developed user-friendly website, including optimized check-out page that increased user clicks, and subsequently customer purchases by 20%</li>
+                                    <li>Trained over 50 staff members in internal web functions, including steps on how to independently make minor updates or changes</li>
+                                    <li>Fixed bugs from existing websites and implemented enhancements that significantly improved web functionality and speed</li>
+                                </ul>
+                        <li><h4>FOCUS SOLUTIONS – Fullerton, CA
+                                Web Developer</h4>
+                                <h5>Skills & Tools: ASP, SQL, JavaScript, Visual Basic, XML, C#, Ajax, HTML</h5></li>
+                                <ul>
+                                    <li>Developed dynamic and interactive website that ensured high traffic, page views, and User Experience, resulting in 40% increase in sales revenue</li>
+                                    <li>Oversaw full lifecycle of software development for 9 projects with 100% on time delivery while staying 5% under budget</li>
+                                    <li>Implemented server that expedited document generation and search functionality by 20%, earning commendation and award from upper management</li>
+                                    <li>Designed processes for cleanup and performance improvement, that minimized downtime by 13%</li>
+                                </ul>
+                    </ul>
+                    </section>
+                    <section className='skills'>
+                        <h3>ADDITIONAL SKILLS</h3>
+                        <ul>
+                            <li>Proficient in Illustrator, Dreamweaver, and Photoshop</li>
+                            <li>Ability to communicate with cross-functional teams</li>
+                            <li>Certified Java Programmer</li>
+                        </ul>
+                    </section>
+                </div>
+            );
+        };
+        ReactDOM.render(  
+            <App />,
+            document.querySelector('#application-root')
+        );
+    </script>
+</body>
+
+</html>
